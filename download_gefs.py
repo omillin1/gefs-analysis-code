@@ -8,7 +8,7 @@ import pandas as pd
 from argparse import ArgumentParser
 
 parser = ArgumentParser(description='Processes and downloads a run from GEFS heightAboveGround variables 31-member and 16-day lead data',
-                        epilog='Example: data_model_pc.py -m ECMWF -v hgt -y 90 60 -x 0 358.5 -l 1 30')
+                        epilog='Example: download_gefs.py -d 20250621 -i 00 -v t2m -n 2t')
 parser.add_argument('-d','--date',nargs=1,type=str,help='Date',default='20250621')
 parser.add_argument('-i','--init',nargs=1,type=str,help='Hour',default='00')
 parser.add_argument('-v','--variable',nargs=1,type=str,help='Variable name',default='t2m')
